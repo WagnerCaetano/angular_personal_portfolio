@@ -1,0 +1,9 @@
+<div class="content">
+    <i *ngIf="data.icon" class="{{data.icon.name}}"></i>
+    <p class="title">{{data.title}}</p>
+
+    <ng-content></ng-content>
+
+    <app-button *ngIf="data.buttonTitle" [text]="data.buttonTitle" [type]="data.buttonType"
+        [rightIcon]="data.buttonIcon"></app-button>
+</div>

@@ -1,0 +1,39 @@
+:host,
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F9F9F9;
+    background-color: #1B2330;
+}
+
+ul {
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #717272;
+    border-radius: 15%;
+    margin: 0px 0px 16px 0px !important;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}

@@ -1,0 +1,5 @@
+<div type="button" class="btn" [ngClass]="{'btn-outline-primary': (type == 'outline'), 'btn-primary': (type == 'normal') }" (click)="clickEventEmit()">
+  <i *ngIf="leftIcon" class="{{leftIcon.name}}"></i>
+  {{ text }} 
+  <i *ngIf="rightIcon" class="{{rightIcon.name}}"></i>
+</div>
