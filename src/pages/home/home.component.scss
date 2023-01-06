@@ -1,0 +1,64 @@
+:host {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.picture {
+
+    display: flex;
+    place-content: center;
+    padding: 10px;
+
+    &__border {
+        border: 1px solid black;
+        width: 80%;
+        height: 80%;
+        border-radius: 15px;
+    }
+
+}
+
+section {
+    padding: 23px;
+}
+
+.intro {
+    
+    display: flex;
+    flex-direction: column;
+
+    p:first-child {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #1B2330;
+    }
+
+    p:nth-child(2) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #3D3C42;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    div > p {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.015em;
+        color: #717272;
+    }
+
+    div > app-button {
+        color: #1B2330;
+    }
+}

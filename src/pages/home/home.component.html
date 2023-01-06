@@ -1,3 +1,45 @@
-<p>
-  home works!
-</p>
+<app-header></app-header>
+
+<section class="picture">
+
+  <img class="picture__border" src="https://thispersondoesnotexist.com/image" alt="">
+
+</section>
+
+<section class="intro">
+
+  <p>Wagner Caetano</p>
+
+  <p>Fullstack developer, I build web and backend applications.
+    <br>
+    <br>
+    That’s my portfolio so you can know a little more about me.
+  </p>
+  <div><i class='fas fa-map-marker'></i>
+    <p>Campinas, Brazil</p>
+  </div>
+
+  <div class="d-flex gap-3">
+    <app-button [text]="'Download CV'" [type]="'outline'" [leftIcon]="leftIcon"></app-button>
+    <app-button [text]="'My Projects'"></app-button>
+  </div>
+
+</section>
+
+<section>
+  <app-card [data]="cardData">
+    I’m wagner, a fullstack developer, focused on Java, Angular and a little bit of Python, although enthusiastic about
+    any technology that feels interesting to me...<br><br>
+
+    My career started, after I finished my technical course, at CI&T as a intern, since then I’ve been studying and
+    learning a lot with all my colleagues and the development career plan of the company. <br><br>
+
+    Beside that, I try to take some time to take courses and study subjects from my graduation.<br><br>
+
+    Recently I’m participating in a scientific project from my university to study covid variants..<br><br>
+  </app-card>
+</section>
+
+<section></section>
+--
+<app-footer></app-footer>

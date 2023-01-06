@@ -1,5 +1,4 @@
 :host {
-    padding: 12px;
     display: flex;
     font-family: 'Roboto';
     font-style: normal;
@@ -13,6 +12,10 @@ div.content {
     height: fit-content;
     border: 1px solid #1B2330;
     border-radius: 8px;
+    padding: 0px 12px 12px 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .title {
@@ -23,4 +26,8 @@ div.content {
 ng-content {
     font-size: 18px !important;
     line-height: 21px !important;
+}
+
+app-button .btn-primary{
+    border-color: white !important;
 }

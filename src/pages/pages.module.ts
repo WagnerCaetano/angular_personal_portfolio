@@ -1,25 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ComponentsModule } from 'src/shared/components/components.module';
-import { PagesModule } from 'src/pages/pages.module';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AppComponent } from 'src/app/app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AboutComponent,
+    HomeComponent,
+    ProjectsComponent,
+  ],
+  exports: [
+    AboutComponent,
+    HomeComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     ComponentsModule,
-    PagesModule,
 
         // ngx-translate and the loader module
         HttpClientModule,
@@ -34,7 +42,7 @@ import { PagesModule } from 'src/pages/pages.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class PagesModule { }
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
