@@ -1,5 +1,5 @@
 <div class="content">
-    <i *ngIf="data.icon" class="{{data.icon.name}}"></i>
+    <img *ngIf="data.icon" [src]="data.icon.name">
     <p class="title">{{data.title}}</p>
 
     <ng-content></ng-content>

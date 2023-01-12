@@ -6,13 +6,19 @@
     font-weight: 400;
 }
 
+img {
+    margin: 20px;
+    margin-left: 10px;
+    width: 40px;
+}
+
 div.content {
     background-color: #1B2330;
     width: fit-content;
     height: fit-content;
     border: 1px solid #1B2330;
     border-radius: 8px;
-    padding: 0px 12px 12px 12px;
+    padding: 16px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;

@@ -13,6 +13,8 @@ export interface IconInterface {
 export class ButtonComponent implements OnInit {
 
   @Input()
+  width: string = 'auto';
+  @Input()
   text: string = "TEXTO";
   @Input()
   type: 'outline' | 'normal' = 'normal';
