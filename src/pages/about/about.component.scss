@@ -1,95 +1,78 @@
 :host {
-    font-family: 'Roboto';
-    font-style: normal;
+  font-family: "Roboto";
+  font-style: normal;
 }
 
 .picture {
+  display: flex;
+  place-content: center;
+  padding: 10px;
 
-    display: flex;
-    place-content: center;
-    padding: 10px;
-
-    &__border {
-        border: 1px solid black;
-        width: 80%;
-        height: 80%;
-        border-radius: 15px;
-    }
-
+  &__border {
+    border: 1px solid black;
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+  }
 }
 
 .titleSection {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 36px;
-    color: #3D3C42;
-    text-align: center;
-    margin:0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  color: #3d3c42;
+  text-align: center;
 }
 
 section {
-    padding: 23px;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  app-knowledge-cards {
+    min-width: 100% !important;
+    width: auto !important;
+  }
+
+  .projects {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
 
-    .skills,.projects {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding-bottom: 40px;
-    }
-
-    app-knowledge-cards {
-        min-width: 100% !important;
-        width: auto !important;
-    }
-}
-
-
-
-.intro {
-
-    justify-content: flex-start;
-    align-items: flex-start;
+  .painel {
     display: flex;
-    flex-direction: column;
+    flex-flow: row;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    justify-content: space-evenly;
+    align-content: space-between;
 
-    p:first-child {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-        color: #1B2330;
+    &__images {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 80px;
+      max-width: max-content;
+      flex-grow: 1;
+      img {
+        max-width: 80vw;
+        width: auto;
+        padding: 12px;
+      }
     }
 
-    p:nth-child(2) {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #3D3C42;
+    &__texto {
+      flex-shrink: 0;
+      flex: 300px;
+      p {
+        width: auto;
+        line-height: 2rem;
+        line-break: loose;
+      }
     }
-
-    div {
-        display: inline-flex;
-        gap: 6px;
-    }
-
-    div>p {
-        font-style: italic;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: -0.015em;
-        color: #717272;
-    }
-
-    div>app-button {
-        color: #1B2330;
-        width: 10.3rem;
-    }
+  }
 }

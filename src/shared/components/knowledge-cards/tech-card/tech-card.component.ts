@@ -12,7 +12,11 @@ import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 export class TechCardComponent implements OnInit {
 
   @Input()
-  currentRate: number = 4;
+  rate!: number;
+  @Input()
+  icon!: string ;
+  @Input()
+  description!: string;
 
   constructor() { }
 

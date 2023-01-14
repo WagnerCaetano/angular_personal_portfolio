@@ -9,7 +9,6 @@
 img {
     margin: 20px;
     margin-left: 10px;
-    width: 40px;
 }
 
 div.content {
@@ -22,11 +21,16 @@ div.content {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
     font-size: 24px;
     line-height: 28px;
+    width: auto;
+    text-align: center;
+    align-self: center;
 }
 
 ng-content {

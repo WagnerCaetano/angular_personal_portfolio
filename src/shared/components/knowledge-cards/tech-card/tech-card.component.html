@@ -9,12 +9,12 @@
 <div class="gray-card">
   <section>
     <div class="circle">
-      <img src="./../../../../assets/icons/angular.svg" alt="">
+      <img [src]="'./../../../../assets/icons/' + icon" alt="">
     </div>
   </section>
   <section class="rating">
-    <p>Mastering</p>
-    <ngb-rating [(rate)]="currentRate" [starTemplate]="t" [readonly]="true" [max]="6"></ngb-rating>
+    <p>{{description}}</p>
+    <ngb-rating [(rate)]="rate" [starTemplate]="t" [readonly]="true" [max]="6"></ngb-rating>
   </section>
 </div>
 

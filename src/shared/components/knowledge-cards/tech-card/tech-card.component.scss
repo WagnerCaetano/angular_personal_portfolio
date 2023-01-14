@@ -7,7 +7,7 @@ i {
 }
 
 .filled {
-  color: yellow;
+  color: #FFD233;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -42,7 +42,8 @@ div.content {
 }
 
 img {
-  padding: 6px;
+  padding: 6px; 
+  min-width: 60px;
 }
 
 p {
@@ -53,7 +54,6 @@ p {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  margin: 0;
 }
 
 .rating {

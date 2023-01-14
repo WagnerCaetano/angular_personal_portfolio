@@ -1,4 +1,4 @@
 <div class="content">
 
-  <app-tech-card *ngFor="let number of teste"></app-tech-card>
+  <app-tech-card [icon]="card.icon" [description]="card.description" [rate]="card.rate"  *ngFor="let card of cardList"></app-tech-card>
 </div>
