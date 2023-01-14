@@ -1,0 +1,64 @@
+i {
+  position: relative;
+  display: inline-block;
+  font-size: rem(20px);
+  padding: rem(8px) !important;
+  color: #1B2330;
+}
+
+.filled {
+  color: yellow;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ngb-rating {
+  gap: 8px;
+}
+
+div.content {
+  background-color: #3d3c42;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #3d3c42;
+  border-radius: 8px;
+  font-weight: 400;
+  padding: 2px;
+  font-size: 18px;
+  line-height: 21px;
+  width: auto;
+}
+
+.gray-card {
+  display: inline-flex;
+  gap: 28px;
+}
+
+.circle {
+  border: solid 3px white;
+  border-radius: 50%;
+}
+
+img {
+  padding: 6px;
+}
+
+p {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+}
+
+.rating {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

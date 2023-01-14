@@ -5,5 +5,5 @@
     <ng-content></ng-content>
 
     <app-button *ngIf="data.buttonTitle" [text]="data.buttonTitle" [type]="data.buttonType"
-        [rightIcon]="data.buttonIcon"></app-button>
+        [rightIcon]="data.buttonIcon" (clickEvent)="clickEventEmit($event)"></app-button>
 </div>

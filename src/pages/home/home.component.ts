@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IconInterface } from 'src/shared/components/button/button.component';
 import { CardComponentInterface } from 'src/shared/components/card/card.component';
 import { ProjectCardComponentInterface } from 'src/shared/components/project-card/project-card.component';
@@ -10,8 +11,8 @@ import { ProjectCardComponentInterface } from 'src/shared/components/project-car
 })
 export class HomeComponent implements OnInit {
   title = 'angular_personal_portfolio';
-  leftIcon: IconInterface = { name: 'fa fa-download' };
-  rightIcon: IconInterface = { name: 'fa fa-arrow-right' };
+  leftIcon: IconInterface = { name: 'bi bi-download' };
+  rightIcon: IconInterface = { name: 'bi bi-arrow-right' };
   skills: { cardData: CardComponentInterface; text: string }[] = [
     {
       cardData: {
@@ -56,10 +57,14 @@ export class HomeComponent implements OnInit {
     title: 'A little about me',
     buttonType: 'normal',
     buttonTitle: 'Continue reading',
-    buttonIcon: { name: 'fa fa-arrow-right' },
+    buttonIcon: { name: 'bi bi-arrow-right' },
   };
 
-  constructor() {}
+  constructor(private readonly router: Router) {}
 
   ngOnInit() {}
+
+  goToReading() {
+    this.router.navigate(['about'], {fragment: 'aboutMeHistory'});
+  }
 }

@@ -18,6 +18,17 @@
 
 }
 
+.titleSection {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #3D3C42;
+    text-align: center;
+    margin:0;
+}
+
 section {
     padding: 23px;
     display: flex;
@@ -25,20 +36,16 @@ section {
     justify-content: center;
     align-items: center;
 
-    .titleSection {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 36px;
-        color: #3D3C42;
-    }
-
     .skills,.projects {
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding-bottom: 40px;
+    }
+
+    app-knowledge-cards {
+        min-width: 100% !important;
+        width: auto !important;
     }
 }
 
@@ -68,8 +75,7 @@ section {
     }
 
     div {
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
         gap: 6px;
     }
 

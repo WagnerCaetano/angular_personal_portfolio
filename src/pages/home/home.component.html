@@ -18,7 +18,7 @@
     That’s my portfolio so you can know a little more about me.
   </p>
   <div>
-    <i class="fas fa-map-marker"></i>
+    <i class="bi bi-geo-alt-fill"></i>
     <p>Campinas, Brazil</p>
   </div>
 
@@ -26,14 +26,14 @@
     <app-button
       [text]="'Download CV'"
       [type]="'outline'"
-      [leftIcon]="leftIcon"
+      [leftIcon]="leftIcon" 
     ></app-button>
     <app-button [text]="'My Projects'"></app-button>
   </div>
 </section>
 
 <section>
-  <app-card [data]="cardData">
+  <app-card [data]="cardData" (clickEvent)="goToReading()">
     I’m wagner, a fullstack developer, focused on Java, Angular and a little bit
     of Python, although enthusiastic about any technology that feels interesting
     to me...<br /><br />

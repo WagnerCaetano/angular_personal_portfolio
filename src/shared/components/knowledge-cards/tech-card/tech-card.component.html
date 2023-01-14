@@ -1,0 +1,21 @@
+<div class="content">
+
+<ng-template #t let-fill="fill">
+	<i class="bi-star-fill">
+		<i *ngIf="fill > 0" class="bi-star-fill filled" [style.width.%]="fill"></i>
+	</i>
+</ng-template>
+
+<div class="gray-card">
+  <section>
+    <div class="circle">
+      <img src="./../../../../assets/icons/angular.svg" alt="">
+    </div>
+  </section>
+  <section class="rating">
+    <p>Mastering</p>
+    <ngb-rating [(rate)]="currentRate" [starTemplate]="t" [readonly]="true" [max]="6"></ngb-rating>
+  </section>
+</div>
+
+</div>

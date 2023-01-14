@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { IconInterface } from '../button/button.component';
 
 export interface CardComponentInterface {
@@ -17,11 +17,17 @@ export interface CardComponentInterface {
 export class CardComponent implements OnInit {
 
   @Input()
-  data: CardComponentInterface = { title: "Title", icon: { name: 'fa fa-arrow' }, buttonType: 'normal'}; 
+  data: CardComponentInterface = { title: "Title", icon: { name: 'bi bi-arrow' }, buttonType: 'normal'}; 
+
+  @Output()
+  clickEvent: EventEmitter<boolean> = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  clickEventEmit(event: boolean) {
+    this.clickEvent.emit(event);
   }
 
 }
